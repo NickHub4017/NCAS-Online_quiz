@@ -8,6 +8,7 @@
 
 if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 session_start(); //we need to call PHP's session object to access it through CI
+
 class Home extends CI_Controller {
 
     function __construct()
@@ -23,7 +24,9 @@ class Home extends CI_Controller {
             $data['username'] = $session_data['username'];
             //$this->load->view('home_view', $data);
             $this->load->helper('html');
-            $this->load->view('home', $data);
+            $this->load->view('header',$data);
+            //$this->load->view('home');
+            $this->load->view('number_grid');
 
         }
         else
