@@ -17,7 +17,7 @@
 <h1 class="text-center" >Welcome to NCA online quiz system</h1>
 <div class="container">
 
-<button onclick="location.href='<?php echo base_url();?>index.php/home/logout'"  >Logout</button>
+<button onclick="location.href='<?php echo base_url();?>home/logout'"  >Logout</button>
 </div>
 
 
